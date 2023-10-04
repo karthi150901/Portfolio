@@ -1,0 +1,156 @@
+ h1{
+  font-family: Sofia, sans-serif;
+  font-size: 80px;
+ }
+ h3{
+  font-family:'Times New Roman', Times, serif;
+  font-size: 40px;
+ 
+ }
+
+ .animated-text {
+    opacity: 0; /* Start with 0 opacity */
+    animation-name: fadeIn; /* Use the fadeIn animation */
+    animation-duration: 2s; /* Animation duration */
+    animation-timing-function: ease-in-out; /* Timing function */
+    animation-fill-mode: forwards; /* Keep the final state of the animation */
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0; /* Start with 0 opacity */
+    }
+    100% {
+      opacity: 1; /* End with full opacity */
+    }
+  }
+
+
+
+  
+ body{
+    background-image: url(/images/img1.jpg);
+    /* background-color:oldlace; */
+    background-size:cover;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+nav{
+   
+    position:sticky;
+    top:0;
+    
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+nav a{
+    font-family: 'Nabla', cursive;
+    margin-left: 30px;
+    margin-right: 30px;
+   
+}
+ .nav-link{
+    color:wheat;
+   
+ }
+
+.nav-link:hover{
+    
+    color:cornsilk;
+    transform: scale(1.2);   
+}
+
+.image{
+    width:fit-content;
+    height:280px;
+    margin-right: 100px;
+}
+
+
+.animated-name {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+  }
+  40% {
+      transform: translateY(-30px);
+  }
+  60% {
+      transform: translateY(-15px);
+  }
+}
+/* 
+.card:hover{
+  transform: scale(1.2); 
+} */
+.card {
+  
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease; /* Add a smooth transition effect */
+}
+
+.card:hover {
+  transform: scale(1.1); 
+  box-shadow: 0 0 10px rgba(0, 0, 0 ); /* Change the shadow properties for the desired effect */
+}
+
+
+@keyframes slide-in {
+  from {
+      transform: translateX(-100%);
+  }
+  to {
+      transform: translateX(0);
+  }
+}
+
+#Skills, #Projects{
+  
+  animation: slide-in 2s ease-in-out;
+}
+
+#Contact{
+  background-color: rgba(0, 0, 0, 0.5);
+  color: azure;
+}
+
+h3:hover{
+  color:  rgba(255, 255, 255, 0.5);
+  animation: bounce 2s infinite;
+
+}
+
+.s-box:hover {
+  transform: scale(1.2); 
+  /* box-shadow: 0 0 10px rgba(0, 0, 0 ); Change the shadow properties for the desired effect */
+}
+
+.animate-name {
+  font-size: 36px;
+  text-transform: uppercase;
+}
+
+.first-letter {
+  display: inline-block;
+  animation: bounce 1s ease infinite;
+  transform-origin: center;
+}
+
+.last-letter {
+  display: inline-block;
+  animation: bounce 1s ease infinite alternate;
+  transform-origin: center;
+}
+
+@keyframes bounce {
+  0%, 100% {
+      transform: translateY(0);
+      
+  }
+  50% {
+      transform: translateY(-10px);
+  }
+}
