@@ -93,24 +93,12 @@ nav a{
 }
 
 .card:hover {
-  transform: scale(1.1); 
+  transform: scale(1.1)!important; 
   box-shadow: 0 0 10px rgba(0, 0, 0 ); /* Change the shadow properties for the desired effect */
 }
 
 
-@keyframes slide-in {
-  from {
-      transform: translateX(-100%);
-  }
-  to {
-      transform: translateX(0);
-  }
-}
 
-#Skills, #Projects{
-  
-  animation: slide-in 2s ease-in-out;
-}
 
 #Contact{
   background-color: rgba(0, 0, 0, 0.5);
@@ -154,3 +142,5 @@ h3:hover{
       transform: translateY(-10px);
   }
 }
+
+
